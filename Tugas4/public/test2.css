@@ -1,0 +1,205 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+/* import */
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --div-topNavbarColor:rgba(0, 0, 0, 0.201);
+    --div-scrollNavbarColor:#433125;
+}
+
+/* navigation bar */
+#bgnav {
+    z-index: 1;
+    position: fixed;
+    width:100%;
+    top:0;
+    overflow: hidden;
+    background-color: var(--div-topNavbarColor);
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: -10px;
+    margin-right: -7px;
+    margin-top:-10px;
+    transition: all 0.5s;
+}
+/* #433125 */
+.bghover{
+    --div-topNavbarColor: #32231c;
+}
+
+
+#bgnav a {
+    opacity: 1;
+    float: right;
+    color: #f2f2f2;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding: 25px 16px;
+    padding-right: 40px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* ini untuk tulisan di navbar*/
+#bgnav a:hover {
+    color: rgb(215, 208, 21);
+}
+
+#bgnav a.title{
+    float:left;
+    margin-left:105px;
+}
+/* end navigation bar */
+
+
+/* untuk background utama */
+#hero{
+    background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("preview.jpg") no-repeat center;
+    height:600px;
+    background-size: cover;
+    background-position: bottom -30px right 100% ;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top:-100px;
+}
+
+/* buat bikin nama */
+.heroname {
+    padding-left:13%;
+    padding-top: 15%;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+}
+
+#hero .heroname #name{
+    font-size:60px;
+}/* end Hero Name */
+/* ending background utama */
+
+
+
+
+/* Section about */
+#about{
+    float:left;
+    margin-left:105px;
+    margin-top:8%;
+}
+.sAbout{
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+}
+
+table{
+    border-radius: 25px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+    padding: 20px;
+    width: 600px;
+    height: 150px;
+    padding-left:50px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    filter: brightness(0) invert(1);
+    transform: translateX(0px);
+    transition: transform 1s;
+}
+
+.show{
+    transform: translateX(30px);
+    filter: brightness(1) invert(0);
+    border: 2px solid #666960;
+    color: black;
+}
+
+td:nth-child(1){
+    margin-left: -20px;
+}
+
+.face{
+    margin-left:20%;
+    width:70%;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+}
+
+/* end Section about */
+
+
+/* Section Masteries */
+#skills{
+    position:relative;
+    float:right;
+    margin-right:105px;
+    padding-bottom: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px solid #666960;
+    width: 600px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+    transform: translateX(0px);
+    transition: transform 1s;
+    background-color: white;
+}
+
+.showSkill{
+    transform: translateX(-30px);
+    filter: brightness(1) invert(0);
+}
+
+
+.skillSection{
+    margin-top:30%;
+    font-size: 40px;
+    float:right;
+    margin-right:105px;
+}
+
+.skillName{
+    font-size: 25px;
+}
+
+.skillBar{
+    background-color: rgb(215, 208, 21);
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top:2% ;
+    border-radius: 10px;
+}
+
+.skillPer{
+    position:absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(245, 242, 242) ;
+    margin-top:-33px;
+}
+/* Section Masteries end */
+
+/* Footer */
+footer{
+    margin-top:47%;
+    margin-left:-100px;
+    margin-right:-100px;
+    margin-bottom:-100px;
+    bottom: 0;
+    background-color: var(--div-scrollNavbarColor);
+    text-align: center;
+    color:white;
+}
+/* Footer End */
